@@ -1,10 +1,4 @@
 streamlit
-pandas
 folium
 streamlit-folium
-geopandas
-shapely
-geojson
-requests
-numpy
-folium
+pandas
