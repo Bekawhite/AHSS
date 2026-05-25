@@ -7,3 +7,4 @@ shapely
 geojson
 requests
 numpy
+folium
