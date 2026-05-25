@@ -1,7 +1,7 @@
 # nairobi_health_map_final.py
 import streamlit as st
 import pandas as pd
-import folium
+#import folium
 import json
 import requests
 from streamlit_folium import st_folium
