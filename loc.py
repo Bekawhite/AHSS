@@ -1,9 +1,18 @@
 # nairobi_health_map_final.py
 import streamlit as st
 import pandas as pd
-import folium
-from streamlit_folium import st_folium
-from folium.plugins import MarkerCluster, Fullscreen
+# Handle folium imports with error catching
+try:
+    import folium
+    from streamlit_folium import st_folium
+    from folium.plugins import MarkerCluster, Fullscreen
+    FOLIUM_AVAILABLE = True
+except ImportError as e:
+    FOLIUM_AVAILABLE = False
+    st.error(f"⚠️ Required packages not installed. Please add to requirements.txt: folium, streamlit-folium")
+    st.stop()
+
+
 import math
 
 # Page configuration
